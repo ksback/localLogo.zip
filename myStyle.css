@@ -243,7 +243,7 @@ body ul{
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 430px) {
     body {
         font-family: Arial, sans-serif;
         -ms-overflow-style: none;
@@ -263,6 +263,7 @@ body ul{
         flex-wrap: wrap;
         align-content: flex-start;
         width: 100%;
+        margin-top: 145px;
     }
 
     .logoInfo {
@@ -287,7 +288,7 @@ body ul{
         border-style: solid;
         border-color: #e8e8e8;
         border-radius: 20px;
-        margin-top: 15px;
+        margin-top: -5px;
     }
     
     .logoContainer img{
@@ -297,20 +298,22 @@ body ul{
     /* 버튼 */
 
     .buttons{
+        width: 70%;
         font-size: 16px;
-        margin-left: -40px;
+        margin-left: 0px;
+        font-size: 14px;
     }
 
     #darkMode{
         margin-top: 10px;
-        margin-right: -25px;
-        width: 8%;
-        height: 40px;
-        background-color: rgba(255, 255, 255 0.9);
+        margin-right: 15px;
+        width: 7%;
+        height: 52px;
+        background-color: rgba(255, 255, 255 0.5);
         backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 3px -2px #4c4c4c;
         border-radius: 50px;
         text-align: center;
-        border: 5px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -333,20 +336,19 @@ body ul{
     .regionSub{
         padding: 5px;
         margin-top: 25px;
-        margin-left: -125px;
+        margin-left: -75px;
         color: #000000;
         text-decoration: none;
         list-style: none;
         display: none;
         position: absolute;
         background-color:rgba(255, 255, 255, 0.8);
-        box-shadow: 0px 0px 5px -2px #4c4c4c;
         border-radius: 10px;
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 12px;
-        width: 100%;
-        height: 25px;
+        width: 115%;
+        height: 50px;
         gap: 5px;
         justify-content: center;
         align-items: center;
@@ -362,20 +364,19 @@ body ul{
     .objectSub{
         padding: 5px;
         margin-top: 25px;
-        margin-left: -120px;
+        margin-left: -135px;
         color: #000000;
         text-decoration: none;
         list-style: none;
         display: none;
         position: absolute;
         background-color:rgba(255, 255, 255, 0.8);
-        box-shadow: 0px 0px 5px -2px #4c4c4c;
         border-radius: 10px;
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 12px;
-        width: 75%;
-        height: 25px;
+        width: 115%;
+        height: 50px;
         gap: 5px;
         justify-content: center;
         align-items: center;
@@ -389,7 +390,7 @@ body ul{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
         gap: 20px;
         display: flex;
@@ -419,7 +420,7 @@ body ul{
     #footer p{
         margin: 20px;
         margin-bottom: 20px;
-        font-size: 12px;
+        font-size: 10px;
         color: #ccc;
         text-align: center;
         align-items: center;
@@ -443,7 +444,6 @@ body ul{
 
 .darkMode .buttons{
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 10px -7px #e8e8e8;
 }
 
 .darkMode .buttons li{
@@ -472,6 +472,10 @@ body ul{
     color: black;
 }
 
+.darkMode .regionSub{
+    margin-top: 50px;
+}
+
 .buttons li:hover{
     font-weight: 700;
 }
@@ -483,3 +487,4 @@ body ul{
 .objectSub li:hover{
     font-weight: 700;
 }
+
