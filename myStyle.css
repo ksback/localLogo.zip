@@ -243,7 +243,7 @@ body ul{
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 390px) {
     body {
         font-family: Arial, sans-serif;
         -ms-overflow-style: none;
@@ -300,14 +300,14 @@ body ul{
     .buttons{
         width: 70%;
         font-size: 16px;
-        margin-left: 0px;
+        margin-left:-25px;
         font-size: 14px;
     }
 
     #darkMode{
         margin-top: 10px;
-        margin-right: 15px;
-        width: 7%;
+        margin-right: -10px;
+        width: 52px;
         height: 52px;
         background-color: rgba(255, 255, 255 0.5);
         backdrop-filter: blur(10px);
@@ -336,7 +336,7 @@ body ul{
     .regionSub{
         padding: 5px;
         margin-top: 25px;
-        margin-left: -75px;
+        margin-left: -65px;
         color: #000000;
         text-decoration: none;
         list-style: none;
@@ -347,7 +347,7 @@ body ul{
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 12px;
-        width: 115%;
+        width: 127%;
         height: 50px;
         gap: 5px;
         justify-content: center;
@@ -364,7 +364,7 @@ body ul{
     .objectSub{
         padding: 5px;
         margin-top: 25px;
-        margin-left: -135px;
+        margin-left: -117px;
         color: #000000;
         text-decoration: none;
         list-style: none;
@@ -375,7 +375,7 @@ body ul{
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 12px;
-        width: 115%;
+        width: 127%;
         height: 50px;
         gap: 5px;
         justify-content: center;
