@@ -1594,15 +1594,3 @@ document.addEventListener('click', function () {
     objectSub.style.display = 'none';
     event.stopPropagation()
 });
-
-
-
-////스크롤
-document.addEventListener("DOMContentLoaded", function () {
-    var scrollTopBtn = document.getElementById("scrollTopBtn");
-
-    scrollTopBtn.addEventListener("click", function () {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    });
-});
