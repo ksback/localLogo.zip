@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localLogo.zip</title>
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="icon" href="img/icon.png" type="'image/x-icon">
+    <script src="myScript.js" defer></script>
+</head>
+<body class="body">
+    <div class="allBox">
+        <div class="logoBox" id="logoBox">
+        </div>
+        <div class="buttonsBox">
+            <ul class="buttons">
+                <li onclick="card()">이름순</li>
+                <li class="regionMenu">지역별
+                    <ul class="regionSub">
+                        <li onclick="key('region', '특별ㆍ광역')">특별ㆍ광역</li>
+                        <li onclick="key('region', '경기도')">경기도</li>
+                        <li onclick="key('region', '강원도')">강원도</li>
+                        <li onclick="key('region', '충청북도')">충청북도</li>
+                        <li onclick="key('region', '충청남도')">충청남도</li>
+                        <li onclick="key('region', '전라북도')">전라북도</li>
+                        <li onclick="key('region', '전라남도')">전라남도</li>
+                        <li onclick="key('region', '경상북도')">경상북도</li>
+                        <li onclick="key('region', '경상남도')">경상남도</li>
+                    </ul>
+                </li>
+                <li class="objectMenu">오브젝트별
+                    <ul class="objectSub">
+                        <li onclick="key('object', '강ㆍ산ㆍ해')">강ㆍ산ㆍ해</li>
+                        <li onclick="key('object', '꽃')">꽃</li>
+                        <li onclick="key('object', '산')">산</li>
+                        <li onclick="key('object', '바다')">바다</li>
+                        <li onclick="key('object', '자연')">자연</li>
+                        <li onclick="key('object', '문화ㆍ문양')">문화ㆍ문양</li>
+                        <li onclick="key('object', '추상적')">추상적</li>
+                        <li onclick="key('object', '태극')">태극</li>
+                        <li onclick="key('object', '텍스트1')">텍스트1</li>
+                        <li onclick="key('object', '텍스트2')">텍스트2</li>
+                    </ul>
+                </li>
+                <li onclick="year()">제작년도순</li>
+            </ul>
+            <div id="darkMode" onclick="toggleDarkMode()"><p>Dark Mode</p><span>D</span></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="passContainer">
+            <div class="pass"></div>
+            <div class="pass"></div>
+            <div class="pass"></div>
+        </div>
+        <div>
+            </br>
+            <p>본 웹 사이트에 보여주고 있는 로고의 개수는 총 <u>174</u>개입니다</p>
+            </br>
+            <p>로고는 <u>1</u>개의 특별시, <u>6</u>개의 광역시, <u>2</u>개의 특별자치도와 시, <u>7</u>개의 도</p>
+            <p>그리고 <u>158</u>개의 시와 군으로 이루어져 있습니다</p>
+            </br>
+            <p>해마다 로고는 새로 만들어지기도, 기존 것을 수정하기도 합니다</p>
+            <p>그리고 그 과정에 <u>막대한 비용</u>을 들이고 있습니다</p>
+            </br>
+            <p>지역의 특색을 보여주기는 커녕 서로 비슷하게 생겨 차이를 느낄 수 없습니다</p>
+            <p>로고는 <u>제 기능</u>을 하고 있는 걸까요?</p>
+            <p>여러분은 어떻게 생각하시나요?</p>
+        </div>
+    </div>
+</body>
+<footer id="footer">
+    <p>본 사이트는 2023 디지털퍼블리싱 수업의 일환으로 제작되었습니다</br>Copyright2023 백기석ㆍ백의진 All rights reserved</p>
+</footer>
+</html>

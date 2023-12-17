@@ -1,0 +1,485 @@
+
+body ul{
+    padding: 0px;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+
+.body{
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: background-color 0.5s;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1920px) {
+    body {
+        font-family: Arial, sans-serif;
+        -ms-overflow-style: none;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* 메인 컨텐츠 */
+
+    .allBox{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    .logoBox{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .logoContainer {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 160px;
+        border-style: solid;
+        border-color: #e8e8e8;
+        border-radius: 20px;
+        margin-top: 20px;
+        transition: border-color 0.5s;
+    }
+
+    .logoContainer img{
+        width: 100%;
+    }
+
+    .logoInfo {
+        margin-top: -220px;
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #ccc;
+        padding: 0px 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        line-height: 5px;
+        width: 20vh;
+    }
+
+    .logoContainer:hover .logoInfo {
+        display: block;
+    }
+
+    /* 버튼 */
+
+    .buttonsBox{
+        width: 100%;
+        position: fixed;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    .buttons {
+        margin-top: 10px;
+        margin-left: -95px;
+        width: 80%;
+        height: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 20px;
+        list-style: none;
+        background-color:rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 0px 3px -2px #4c4c4c;
+        backdrop-filter: blur(3px);
+        font-weight: 500;
+    }
+
+    #darkMode{
+        margin-top: 10px;
+        margin-right: -75px;
+        width: 7%;
+        height: 52px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 3px -2px #4c4c4c;
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #darkMode p{display: flex;}
+    #darkMode span{display:none; font-size: 20px;}
+    #darkMode:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .regionMenu{
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        transition: background-color 0.5s;
+    }
+
+    .regionMenu li{
+        font-weight: 300;
+    }
+
+
+    .regionSub{
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: -180px;
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        display: none;
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 0px 3px -2px #4c4c4c;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 14px;
+        max-width: 120vw;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .objectMenu{
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        transition: background-color 0.3s;
+    }
+
+    .objectMenu li{
+        font-weight: 300;
+    }
+
+    .objectSub{
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: -160px;
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        display: none;
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 0px 3px -2px #4c4c4c;
+        backdrop-filter: blur(30px);
+        border-radius: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 14px;
+        max-width: 100vw;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /* 설명글 */
+
+    #main{
+        margin-top: 120px;
+        margin-bottom: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        gap: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #passContainer{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .pass{
+        width: 3px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: black;
+    }
+
+    #footer{
+        display: flex;
+        justify-content: right;
+        border-top:1px solid rgb(213, 213, 213)
+    }
+    
+    #footer p{
+        margin: 30px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: #ccc;
+        text-align: right;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        font-family: Arial, sans-serif;
+        -ms-overflow-style: none;
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none
+    }
+
+    /* 메인 컨텐츠 */
+
+    .allBox{
+        width: 100%;
+        overflow: hidden;
+    }
+    .logoBox{
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 100%;
+    }
+
+    .logoInfo {
+        margin-top: -200px;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #ccc;
+        padding: 0px 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        line-height: 5px;
+        width: 15vh;
+    }
+
+    .logoContainer {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 103px;
+        border-style: solid;
+        border-color: #e8e8e8;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+    
+    .logoContainer img{
+        width: 100%;
+    }
+
+    /* 버튼 */
+
+    .buttons{
+        font-size: 16px;
+        margin-left: -40px;
+    }
+
+    #darkMode{
+        margin-top: 10px;
+        margin-right: -25px;
+        width: 8%;
+        height: 40px;
+        background-color: rgba(255, 255, 255 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        text-align: center;
+        border: 5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    #darkMode p{display: none;}
+    #darkMode span{display:flex; font-size: 20px;}
+
+    .regionMenu{
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        transition: background-color 0.5s;
+    }
+    
+    
+    .regionSub{
+        padding: 5px;
+        margin-top: 25px;
+        margin-left: -125px;
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        display: none;
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 5px -2px #4c4c4c;
+        border-radius: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 12px;
+        width: 100%;
+        height: 25px;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .objectMenu{
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        transition: background-color 0.3s;
+    }
+    
+    .objectSub{
+        padding: 5px;
+        margin-top: 25px;
+        margin-left: -120px;
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        display: none;
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 5px -2px #4c4c4c;
+        border-radius: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 12px;
+        width: 75%;
+        height: 25px;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 설명글 */
+
+    #main{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #passContainer{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+    
+    .pass{
+        width: 3px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: black;
+    }
+
+    #footer{
+        display: flex;
+        justify-content: center;
+        border-top:1px solid rgb(213, 213, 213)
+    }
+    
+    #footer p{
+        margin: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: #ccc;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+
+.body.darkMode{
+    background-color: black;
+    color: white;
+}
+
+.darkMode #main{
+    color: white;
+}
+
+.darkMode #main #passContainer .pass{
+    background-color: white;
+}
+
+.darkMode .buttons{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px -7px #e8e8e8;
+}
+
+.darkMode .buttons li{
+    color: white;
+}
+
+.darkMode .buttons li ul{
+    background-color: black;
+    margin-top: 15px;
+}
+
+.darkMode #darkMode{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px -7px #e8e8e8;
+    backdrop-filter: blur(5px);
+}
+
+.darkMode .logoContainer{
+    border-style: solid;
+    border-color: #2e2e2e;
+}
+
+.darkMode #darkMode:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.buttons li:hover{
+    font-weight: 700;
+}
+
+.regionSub li:hover{
+    font-weight: 700;
+}
+
+.objectSub li:hover{
+    font-weight: 700;
+}
